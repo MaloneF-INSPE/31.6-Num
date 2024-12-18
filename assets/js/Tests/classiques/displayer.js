@@ -65,7 +65,7 @@ function displayQuest(vb,rep,id,p,tp){
 }
 
 function displaySentence(tot){
-    if(tot<16){return "BAD"}else if(tot>=16 && tot<26){return "NOT BAD"}else if(tot>=26 && tot<32){return "EXCELLENT"}else{return "BEST"}
+    if(tot<16){return "Bel effort, continue ainsi. Un point leçon s’impose puis entraîne-toi grâce aux exercices !"}else if(tot>=16 && tot<26){return "Bravo, bon travail, continue ainsi et entraîne-toi grâce aux exercices ! Tu peux également refaire un point sur la leçon."}else if(tot>=26 && tot<32){return "Félicitations ! Tu peux consolider tes efforts en faisant quelques exercices supplémentaires."}else{return "Félicitations ! La conjugaison n’a plus de secret pour toi. Pour ne jamais oublier, tu peux continuer à t’exercer quand tu le souhaites !"}
 }
 
 export function stylizerQuest(){
@@ -281,7 +281,7 @@ function displayModal(stat){
         if (!JSON.parse(localStorage.isFinal)) {
             rPann = `
             <div class="right-panel">
-                <p>Phrase petit bateau</p>
+                <p>Note les résultats de ton test de positionnement et le parcours que tu vas devoir suivre dans le tableau fourni par ton enseignant.</p>
                    ${genererListeAvecTirets(trierStat(stat))}
             </div>
             `
@@ -293,8 +293,8 @@ function displayModal(stat){
         <div class="modal-content" style:"color: black;">
           
           <div class="left-panel" id="lPanne">
-                <p>Résultat total: ${stat.total} / 32</p>
-                <div> Temps Simples: ${stat.ts} /24 | Temps Composés: ${stat.tc} / 8 </div>
+                <p>Résultat total : ${stat.total} / 32</p>
+                <div> Temps Simples : ${stat.ts} /24 | Temps Composés : ${stat.tc} / 8 </div>
                 <div> Présent : ${stat.present} / 4 </div>
                 <div> Futur : ${stat.futur} / 4 </div>
                 <div> Passé simple : ${stat.passe} / 4 </div>
