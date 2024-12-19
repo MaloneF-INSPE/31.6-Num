@@ -797,11 +797,11 @@ let vb = [
         pp_id : 1
     },
     {
-        vb: "atterir",
-        rad: "atter",
-        rad_imp: "atteriss",
+        vb: "atterrir",
+        rad: "atterr",
+        rad_imp: "atterriss",
         grp: 2,
-        pp : "atteri",
+        pp : "atterri",
         pp_id : 2
     },
     {

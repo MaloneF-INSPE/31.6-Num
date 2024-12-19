@@ -303,6 +303,7 @@ function displayModal(stat){
                 <div> Imparfait : ${stat.imparfait} / 4 </div>
                 <div> Passé composé : ${stat.pc} / 4 </div>
                 <div> Plus-que-parfait : ${stat.pqp} / 4 </div>
+                <br>
                 <div> ${displaySentence(stat.total)} </div>
             </div>
             ${rPann}
